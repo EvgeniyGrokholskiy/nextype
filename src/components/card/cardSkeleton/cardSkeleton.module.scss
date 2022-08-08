@@ -1,0 +1,21 @@
+.wrapper {
+  flex-basis: 320px;
+  flex-shrink: 0;
+  overflow: hidden;
+  height: 472px;
+  max-width: 320px;
+}
+
+.image {
+  background-color: gray;
+  opacity: 0.2;
+  text-align: center;
+  line-height: 320px;
+  width: 100%;
+}
+
+.text_block {
+  line-height: 100px;
+  text-align: center;
+  width: 100%;
+}
