@@ -2,6 +2,7 @@ import React from "react"
 
 import styles from "./categories.module.scss"
 import {ICategoriesProps} from "../../types/types"
+import CategorySkeleton from "./categoriesSkeleton";
 
 
 const Categories: React.FC<ICategoriesProps> = ({activeCategory, isLoading, data, onClickHandler}) => (
@@ -17,7 +18,7 @@ const Categories: React.FC<ICategoriesProps> = ({activeCategory, isLoading, data
                             categoriesItem.name
                         }
                     </li>)
-                    : <span>{"skeleton"}</span>
+                    : <CategorySkeleton/>
             }
         </ul>
     </nav>

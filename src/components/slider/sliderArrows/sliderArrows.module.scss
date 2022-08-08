@@ -1,0 +1,17 @@
+.next_button, .prev_button {
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 44px;
+  width: 44px;
+  z-index: 1;
+}
+
+.next_button {
+  right: -12px;
+}
+
+.prev_button {
+  left: -22px;
+}

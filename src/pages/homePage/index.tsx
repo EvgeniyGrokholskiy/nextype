@@ -1,10 +1,9 @@
 import React, {useState} from "react"
 
-import Card from "../../components/card"
 import styles from "./homePage.module.scss"
-import {ICardData} from "../../models/models"
 import Categories from "../../components/categories"
 import ErrorPopup from "../../components/errorPopup"
+import SliderComponent from "../../components/slider"
 import {useGetCardsDataQuery, useGetCategoriesQuery} from "../../store/myJsonServerApi/myJsonServerApi"
 
 
@@ -44,11 +43,7 @@ const HomePage: React.FC = () => {
                             onClickHandler={setActiveCategoryHandler}/>
             </div>
             <section>
-                {
-                    cardData?.map((item: ICardData) => <Card key={item.id} id={item.id} description={item.description}
-                                                             image={item.image} categoryId={item.categoryId}
-                                                             name={item.name} tags={item.tags} url={item.url}/>)
-                }
+                <SliderComponent cardData={cardData} isLoadingCardData={isLoadingCardData}/>
             </section>
         </div>
     )
