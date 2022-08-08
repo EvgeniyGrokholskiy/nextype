@@ -1,12 +1,19 @@
-import React from "react"
+import React, {useState} from "react"
 
+import Card from "../../components/card"
 import styles from "./homePage.module.scss"
+import {ICardData} from "../../models/models"
+import Categories from "../../components/categories"
 import {useGetCardsDataQuery, useGetCategoriesQuery} from "../../store/myJsonServerApi/myJsonServerApi"
-import Card from "../../components/card";
-import {ICardData} from "../../models/models";
 
 
 const HomePage: React.FC = () => {
+
+    const [activeCategory, setActiveCategory] = useState<number>(1)
+
+    const setActiveCategoryHandler = (id: number) => () => {
+        setActiveCategory(id)
+    }
 
     const {
         isLoading: isLoadingCategories,
@@ -20,7 +27,7 @@ const HomePage: React.FC = () => {
         isError: isErrorCardData,
         //error: cardErrorMessage,
         data: cardData
-    } = useGetCardsDataQuery(1)
+    } = useGetCardsDataQuery(activeCategory)
 
     console.log(`categoriesData: ${categoriesData},cardData: ${cardData}`)
 
@@ -29,7 +36,11 @@ const HomePage: React.FC = () => {
             <h1 className={styles.header}>{"Блог и соцсети"}</h1>
             <p className={styles.text}>{"Идейные соображения высшего порядка, а также сложившаяся структура организации представляет собой интересный эксперимент проверки направлений прогрессивного развития."}</p>
             <div className={styles.categories_block}>
-                categories
+                {
+                    (isErrorCardData || isErrorCategories) && <p>{"ERROR!!!!!!!!!!!"}</p>
+                }
+                <Categories activeCategory={activeCategory} isLoading={isLoadingCategories} data={categoriesData}
+                            onClickHandler={setActiveCategoryHandler}/>
             </div>
             <section>
                 {

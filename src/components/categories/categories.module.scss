@@ -1,0 +1,27 @@
+@import "src/index.scss";
+
+
+.wrapper {
+  display: flex;
+  gap: 40px;
+  border-bottom: 1px solid $ui_gray;
+  margin-bottom: 32px;
+}
+
+.text {
+  @include font(18px, 700, 26px);
+  cursor: pointer;
+  list-style: none;
+}
+
+.active {
+  position: relative;
+  padding-bottom: 14px;
+  border-bottom: 2px solid $ui_primary;
+}
+
+@media screen and (max-width: 500px){
+  .wrapper {
+    gap: 8%;
+  }
+}
