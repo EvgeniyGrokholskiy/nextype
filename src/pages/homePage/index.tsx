@@ -4,6 +4,7 @@ import Card from "../../components/card"
 import styles from "./homePage.module.scss"
 import {ICardData} from "../../models/models"
 import Categories from "../../components/categories"
+import ErrorPopup from "../../components/errorPopup"
 import {useGetCardsDataQuery, useGetCategoriesQuery} from "../../store/myJsonServerApi/myJsonServerApi"
 
 
@@ -37,7 +38,7 @@ const HomePage: React.FC = () => {
             <p className={styles.text}>{"Идейные соображения высшего порядка, а также сложившаяся структура организации представляет собой интересный эксперимент проверки направлений прогрессивного развития."}</p>
             <div className={styles.categories_block}>
                 {
-                    (isErrorCardData || isErrorCategories) && <p>{"ERROR!!!!!!!!!!!"}</p>
+                    (isErrorCardData || isErrorCategories) && <ErrorPopup/>
                 }
                 <Categories activeCategory={activeCategory} isLoading={isLoadingCategories} data={categoriesData}
                             onClickHandler={setActiveCategoryHandler}/>
