@@ -2,6 +2,7 @@ import React from "react"
 
 import {ISliderDotProps} from "../../../types/types"
 
+
 const SliderDots: React.FC<ISliderDotProps> = ({index, activeSlide}) => (
     <>
         {

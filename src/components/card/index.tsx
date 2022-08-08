@@ -3,6 +3,7 @@ import React from "react"
 import styles from "./card.module.scss"
 import {ICardProps} from "../../types/types"
 
+
 const Card: React.FC<ICardProps> = ({id, image, name, url, description, tags}) => {
 
     const tagsToRender = tags.map(tag => <span key={tag.id} className={styles.tag_text}>{tag.name}</span>)
