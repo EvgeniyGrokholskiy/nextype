@@ -29,8 +29,6 @@ const HomePage: React.FC = () => {
         data: cardData
     } = useGetCardsDataQuery(activeCategory)
 
-    console.log(`categoriesData: ${categoriesData},cardData: ${cardData}`)
-
     return (
         <div className={styles.wrapper}>
             <h1 className={styles.header}>{"Блог и соцсети"}</h1>
