@@ -1,0 +1,25 @@
+@import "src/index";
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  max-width: 1328px;
+  width: 100%;
+}
+
+.header {
+  @include font(32px, 700, 40px);
+  color: $text_primary;
+  margin-bottom: 16px;
+}
+
+.text {
+  @include font(16px, 400, 24px);
+  color: $text_tertiary;
+  margin-bottom: 32px;
+}
+
+.categories_block {
+  width: 100%;
+}

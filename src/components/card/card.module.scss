@@ -1,0 +1,81 @@
+@import "src/index";
+
+.link {
+  text-decoration: none;
+}
+
+.wrapper {
+  flex-shrink: 0;
+  overflow: hidden;
+  position: relative;
+  height: 472px;
+  max-width: 320px;
+}
+
+.image {
+  height: auto;
+  width: 100%;
+}
+
+.wrapper:hover {
+  box-shadow: 0 4px 32px 0 $shadow_color;
+  padding: 32px 24px;
+}
+
+.wrapper:hover .image {
+  display: none;
+}
+
+.text_block {
+  padding: 26px 32px 48px 32px;
+}
+
+.wrapper:hover .text_block {
+  overflow-y: scroll;
+  padding: 0 24px 0 0;
+  height: 472px - 64px;
+  margin: 0;
+}
+
+.text_block::-webkit-scrollbar {
+  width: 1px;
+}
+
+.text_block::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px $ui_gray;
+}
+
+.text_block::-webkit-scrollbar-thumb {
+  background-color: $ui_primary;
+  outline: 1px solid $ui_primary;
+}
+
+.text {
+  @include font(16px, 400, 24px);
+  color: $text_tertiary;
+  margin: 0;
+  text-decoration: none;
+}
+
+.tag_block {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 24px;
+  margin-bottom: 50px; // добавлено для появления скролла на третьем слайде
+}
+
+.tag_text {
+  @include font(16px, 400, 24px);
+  color: $ui_primary;
+  word-break: break-word;
+}
+
+.gradient {
+  background: rgb(255,255,255);
+  background: linear-gradient(0deg, $ui_white 0%, $ui_white 40%, rgba(252,251,251,0) 100%);
+  position: absolute;
+  bottom: 0;
+  height: 140px;
+  width: 100%;
+}
