@@ -1,6 +1,25 @@
 @import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
 
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+  url('./fonts/roboto-v30-latin-regular.woff2') format('woff2'),
+  url('./fonts/roboto-v30-latin-regular.ttf') format('truetype')
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+  url('./fonts/roboto-v30-latin-700.woff2') format('woff2'),
+  url('./fonts/roboto-v30-latin-700.ttf') format('truetype')
+}
+
 $ui_primary: #2244CC;
 $ui_gray: #E1E1E6;
 $ui_white: #ffffff;

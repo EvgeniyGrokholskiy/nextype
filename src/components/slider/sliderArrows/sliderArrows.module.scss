@@ -1,5 +1,7 @@
+@import "src/index";
+
 .next_button, .prev_button {
-  background-color: white;
+  background-color: $ui_white;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
