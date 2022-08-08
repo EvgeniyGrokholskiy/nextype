@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1de61172.css",
+    "main.js": "/static/js/main.8fd4698e.js",
+    "static/media/roboto-v30-latin-regular.ttf": "/static/media/roboto-v30-latin-regular.6b1ef4e4ab8eafee13c1.ttf",
+    "static/media/roboto-v30-latin-700.ttf": "/static/media/roboto-v30-latin-700.5e5b76f0fae3cf2ef7cc.ttf",
+    "static/media/roboto-v30-latin-700.woff2": "/static/media/roboto-v30-latin-700.227c93190fe7f82de3f8.woff2",
+    "static/media/roboto-v30-latin-regular.woff2": "/static/media/roboto-v30-latin-regular.b009a76ad6afe4ebd301.woff2",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/index.html",
+    "static/media/prevArrow.svg": "/static/media/prevArrow.5122bcee5858f455d30e2eab3c2ca05f.svg",
+    "static/media/nextArrow.svg": "/static/media/nextArrow.523a167d43b6f2adfa366a79b109b494.svg"
+  },
+  "entrypoints": [
+    "static/css/main.1de61172.css",
+    "static/js/main.8fd4698e.js"
+  ]
+}
