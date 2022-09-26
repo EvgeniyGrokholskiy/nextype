@@ -27,8 +27,6 @@ https://www.figma.com/file/oyZWLCILx5tVHtpPzoGIAk/%D0%9D%D0%B5%D0%BA%D1%81%D1%82
 https://my-json-server.typicode.com/glebov-g/frontend-fake-db/items
 Загрузить результат работ в любой открытый git-репозиторий и прислать ссылку 
 
-
-
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
